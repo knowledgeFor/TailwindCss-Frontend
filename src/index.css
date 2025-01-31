@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  margin: 0;
+  background-color: #000000;
+  font-family: 'Inter', sans-serif;
+  color: rgba(255, 255, 255, 0.87);
+  box-sizing: border-box;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*/* Works on Firefox */
+ :root * {
+  scrollbar-width: thin;
+  scrollbar-color: #00ff5b #ffffff40;
+}
+
+/* Works on Chrome, Edge, and Safari */
+:root *::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+:root *::-webkit-scrollbar-track {
+  background: #ffffff40;
+}
+
+:root *::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background-color: #00ff5b;
+  border-radius: 12px;
+  border: 3px solid #ffffff40;
+}
+@font-face {
+  font-family: 'Circular Std';
+  src: url('assets/fonts/CircularStd-Bold.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circular Book';
+  src: url('assets/fonts/CircularStd-Book.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
